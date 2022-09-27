@@ -36,14 +36,16 @@ inRangeComprension a b xs = [x | x <- xs, x >= a, x <= b]
 -- returns a^b, where b is a non-negative integer
 power a b = if b == 0 then 1 else a * power a (b-1)
 
-
+-- Test Cases
 main = do
     print (squareOddsRecursive [0, 2, 1, 7, 8, 56, 17, 18])
     print (squareOddsComprension [0, 2, 1, 7, 8, 56, 17, 18])
     --print (capitalizeComprehension "grEENVIlle")
     print (prodRecursive [3, 2, 1])
+    -- print (prodRecursive [3.0, 2.0])
     print (palindromeRecursive "abba")
     print (palindromeRecursive "abb")
     print (inRangeRecursive 5 10 [9, 3, 12])
     print (inRangeComprension 5 10 [9, 3, 12])
+    print (power 2.0 1)
     print (power 2 3)
