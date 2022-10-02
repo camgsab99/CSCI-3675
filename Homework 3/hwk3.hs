@@ -2,6 +2,7 @@
 -- CSCI 3675
 -- 10/01/2022
 import Data.Char
+
 -- Returns the square of each odd number in the list
 squareOddsRecursive :: [Int] -> [Int]
 squareOddsRecursive [] = []
