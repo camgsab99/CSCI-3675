@@ -37,3 +37,7 @@ subst(X,Y,[H|T],[I|U]):- I is H, subst(X,Y,T,U).
 insert(X,[],[X]).
 insert(X,[H|T],[H|U]):- X >= H, insert(X, T, U).
 insert(X,[H|T],[X|[H|T]]):- X < H.
+
+% Midterm Question
+prefix([],_).
+prefix([H|T],[H|U]):- prefix(T,U).
